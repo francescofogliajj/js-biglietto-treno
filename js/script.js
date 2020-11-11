@@ -22,9 +22,9 @@ var prezzo = 0.21;
 
 // 40% per gli over 65.
 if (anni < 18) {
-  var biglietto = ((chilometri * prezzo) *20) / 100;
+  var biglietto = ((chilometri * prezzo) *80) / 100;
 } else if (anni > 65) {
-  var biglietto = ((chilometri * prezzo) *40) / 100;
+  var biglietto = ((chilometri * prezzo) *60) / 100;
 } else if (anni > 18 && anni < 65) {
   var biglietto = (chilometri * prezzo);
 }
