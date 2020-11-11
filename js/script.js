@@ -19,12 +19,16 @@ var prezzo = 0.21;
 // ma va applicato uno sconto del
 
 // 20% per i minorenni e del
+var scontoMinorenni = 80 / 100;
 
 // 40% per gli over 65.
+var scontoOver = 60 / 100;
+
+
 if (anni < 18) {
-  var biglietto = ((chilometri * prezzo) *80) / 100;
+  var biglietto = (chilometri * prezzo) * scontoMinorenni;
 } else if (anni > 65) {
-  var biglietto = ((chilometri * prezzo) *60) / 100;
+  var biglietto = (chilometri * prezzo) * scontoOver;
 } else if (anni > 18 && anni < 65) {
   var biglietto = (chilometri * prezzo);
 }
