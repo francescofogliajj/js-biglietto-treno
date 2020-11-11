@@ -15,14 +15,17 @@ console.log(anni);
 // Il prezzo del biglietto è definito in base ai
 // km (0.21 € al km),
 var prezzo = 0.21;
+console.log(prezzo);
 
 // ma va applicato uno sconto del
 
 // 20% per i minorenni e del
 var scontoMinorenni = 80 / 100;
+console.log(scontoMinorenni);
 
 // 40% per gli over 65.
 var scontoOver = 60 / 100;
+console.log(scontoOver);
 
 
 if (anni < 18) {
